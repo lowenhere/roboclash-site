@@ -21,6 +21,20 @@ section .img-fluid {
     
 }
 
+@media (max-aspect-ratio: 4/5 ) {
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+
+  transform: translateZ(-1px) scale(2.2);
+  background-size: 100%;
+  z-index: -1;
+}
 
 .wrapper {
   height: 100vh;
@@ -43,6 +57,18 @@ section .img-fluid {
     background-color: rgba(255,255,255,0);
 }
 
+
+
+.bg1::after {
+  background-image: url('../img/roboclash_bg.jpg');
+  background-position: center;
+  background-color: #FFAA5A;
+  background-repeat: no-repeat;
+}
+
+}
+
+@media (min-aspect-ratio: 4/5) {
 .parallax::after {
   content: " ";
   position: absolute;
@@ -52,17 +78,49 @@ section .img-fluid {
   left: 0;
   
 
-  transform: translateZ(-1px) scale(2.1);
-  background-size: 100%;
+  transform: translateZ(-1px) scale(2.5);
   z-index: -1;
 }
 
+.wrapper {
+  height: 100vh;
+  width:  100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 0.7px;
+}
+
+.parallax-section {
+  position: relative;
+  height: 75vh;
+    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFAA5A;
+  color: #FFAA5A;
+}
+
+.parallax {
+    background-color: rgba(255,255,255,0);
+}
+
+
+
 .bg1::after {
-  background-image: url('../img/roboclash_bg.jpg');
-  background-position: center;
+  background-image: url('../img/roboclash_bg_left.jpg') ,url('../img/roboclash_bg_right.jpg');
+  background-position: left,right;
   background-color: #FFAA5A;
   background-repeat: no-repeat;
+  background-size: contain;
 }
+
+}
+
+
+
+
+
 
 .masthead h1{
   text-shadow: 3px 3px #000;
