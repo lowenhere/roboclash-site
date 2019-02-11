@@ -1,0 +1,72 @@
+body,html{
+    margin:0;
+    padding:0;
+}
+
+main {
+    background-color: #212529;
+}
+
+section {
+    background-color: #212529;
+}
+
+section p, h1, h2, h3, h4, h5, h6, a {
+    color: white;
+}
+
+section .img-fluid {
+    width: auto;
+    max-height: 8rem;
+    
+}
+
+
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 1px;
+}
+
+.parallax-section {
+  position: relative;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFAA5A;
+  color: #FFAA5A;
+}
+
+.parallax {
+    background-color: rgba(255,255,255,0);
+}
+
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+
+  transform: translateZ(-1px) scale(2.1);
+  background-size: 100%;
+  z-index: -1;
+}
+
+.bg1::after {
+  background-image: url('/img/roboclash_bg.jpg');
+  background-position: center;
+  background-color: #FFAA5A;
+  background-repeat: no-repeat;
+}
+
+.masthead h1{
+  text-shadow: 3px 3px #000;
+} 
+.masthead p{
+  text-shadow: 2px 2px #000;
+} 
