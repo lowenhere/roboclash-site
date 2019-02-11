@@ -58,7 +58,7 @@ section .img-fluid {
 }
 
 .bg1::after {
-  background-image: url('/img/roboclash_bg.jpg');
+  background-image: url('../img/roboclash_bg.jpg');
   background-position: center;
   background-color: #FFAA5A;
   background-repeat: no-repeat;
