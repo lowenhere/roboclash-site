@@ -31,7 +31,7 @@ section .img-fluid {
   left: 0;
   
 
-  transform: translateZ(-1px) scale(2.2);
+  transform: translateZ(-1px) scale(2.5);
   background-size: 100%;
   z-index: -1;
 }
@@ -45,7 +45,7 @@ section .img-fluid {
 
 .parallax-section {
   position: relative;
-  height: 75vh;
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,10 +60,11 @@ section .img-fluid {
 
 
 .bg1::after {
-  background-image: url('../img/roboclash_bg.jpg');
-  background-position: center;
-  background-color: #FFAA5A;
+  background-image: url('../img/roboclash_bg.png'),
+  url('../img/poster_bg.jpg');
+  background-position: center,center;
   background-repeat: no-repeat;
+  background-size: contain,cover;
 }
 
 }
@@ -78,7 +79,7 @@ section .img-fluid {
   left: 0;
   
 
-  transform: translateZ(-1px) scale(2.5);
+  transform: translateZ(-1px) scale(2.6);
   z-index: -1;
 }
 
@@ -87,7 +88,7 @@ section .img-fluid {
   width:  100vw;
   overflow-x: hidden;
   overflow-y: auto;
-  perspective: 0.7px;
+  perspective: 0.8px;
 }
 
 .parallax-section {
@@ -108,13 +109,15 @@ section .img-fluid {
 
 
 .bg1::after {
-  background-image: url('../img/roboclash_bg_left.jpg') ,url('../img/roboclash_bg_right.jpg');
-  background-position: left,right;
-  background-color: #FFAA5A;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
+  width: 100%;
 
+  background-image: url('../img/roboclash_bg_left.png') ,
+  url('../img/roboclash_bg_right.png'),
+  url('../img/poster_bg.jpg');
+  background-position: left,right,center;
+  background-repeat: no-repeat;
+  background-size: contain,contain,cover;
+}
 }
 
 

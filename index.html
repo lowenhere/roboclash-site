@@ -31,34 +31,33 @@
     <main class="wrapper">
         
     <!-- Navigation -->
-    <nav class="navbar navbar-dark bg-dark sticky-top">
-      <div class="container">
-        <a class="navbar-brand " href="#">
-              <img class="nav-icon" src="img/black_bg_logos/roboclash_logo.png" alt="" width="50" height="50">
-            
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+            <img src="img/roboclash_text_logo.png" alt="ROBOCLASH" height="50">
           </a>
-          
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Prizes</a>
+              <a class="nav-link" href="#prizes">Prizes</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#organizers">Organizers</a>
             </li>
             <li class="nav-item">
-              <button type="submit" class="btn btn-primary">Sign Up</button>
+              <button type="submit" class="btn btn-danger" onclick="window.open('http://tinyurl.com/roboclash2019')">SIGN UP NOW!</button>
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
+    </div>
+  </nav>
 
     <!-- Masthead -->
     <section class="text-white text-center parallax-section parallax bg1">
@@ -67,15 +66,45 @@
         <div class="row">
           <div class="col-xl-9 mx-auto">
             <h1 class="mb-3">ROBOCLASH 2019</h1>
-              <p class="mb-4">COMING SOON</p>
+              <p class="mb-4">REGISTRATIONS ARE OPEN!</p>
           </div>
             
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-                <button type="submit" class="btn btn-lg btn-primary">Sign Up</button>
+                <button type="submit" class="btn btn-lg btn-danger" onclick="window.open('http://tinyurl.com/roboclash2019')">SIGN UP NOW!</button>
               </div>
           </div>
         </div>
     </section>
+
+    <section class="py-3">
+      <div class="d-flex flex-wrap justify-content-center align-items-center container">
+
+          <div class = "d-inline-block align-self-stretch col-md-6 card border-secondary bg-dark pt-2 pb-4" id="about">
+            <h3 class="mt-4 mb-4">About</h3>
+            <p class="mt-2 mb-2">SUTD's first head-to-head robotics competition is here! Build a robot to complete the various challeges and pit your robot against others in the tournament! Sign up in pairs to be matched into teams!</p>
+          </div>
+
+          <div class = "d-inline-block align-self-stretch col-md-6 card border-secondary bg-dark pt-2 pb-4" id="about">
+            <h3 class="mt-4 mb-4">Competition Details</h3>
+            <p class="mt-2 mb-2"><b>Competition Dates:</b> 11-12 May 2019, 5PM - 7PM</p>
+            <p class="mt-2 mb-2"><b>Location:</b> SUTD Multi-Purpose Hall</p>
+            <p class="mt-2 mb-2"><b>Registrations close:</b> ?? March</p>
+            <p class="mt-2 mb-1">To learn more about the rules of the competition, download the rulebook below!</p>
+            <button type="button" class="btn btn-light mt-4" onclick="window.open('./downloads/SOAR_Roboclash_2019_Ruleset.pdf')">Download the Rulebook! <i class="far fa-file-pdf"></i></button>
+          </div>
+
+
+
+          <div class = "d-inline-block align-self-stretch col-md-12 card border-secondary bg-dark pt-2 pb-4" id="prizes">
+            <h3 class="mt-4 mb-4 align-middle">Prizes</h3>
+            <p class="mt-2 mb-2"><b>First Prize:</b> One Nintendo Switch for each team member!</p>
+            <p class="mt-2 mb-2"><b>More prizes to be revealed soon!</b></p>
+          </div>
+
+          </div>
+      </section>
+
+
 
     
     <section class="text-center" id="organizers">
@@ -87,26 +116,29 @@
         
         <div class="container">
             <div class = "d-inline-block col-md-3 mb-3">
-                <h6 class="mb">Organizer:</h6>
-                <img class="img-fluid px-3 py-3" src ="img/black_bg_logos/SOAR_logo.png"/>
+                <h5 class="mb">Organizer:</h5>
+                <img class="img-fluid px-3 py-3" src ="img/black_bg_logos/soar_logo.png"/>
                 
              </div>
             
             <div class = "d-inline-block col-md-3 mb-3">
-                <h6>Co-Organizer:</h6>
-                <img class="img-fluid px-3 py-3"  src ="img/black_bg_logos/EPD_logo.png"/>
+                <h5>Sponsored by:</h5>
+                <img class="img-fluid px-3 py-3" src ="img/black_bg_logos/lionsbot_logo.png"/>
+                
              </div>
             
             <div class = "d-inline-block col-md-3 mb-3">
-                <h6>Supported by:</h6>
-                <img class="img-fluid px-3 py-3" src ="img/black_bg_logos/lionsbot_logo.png"/>
+                <h5>Supported by:</h5>
+                <img class="img-fluid px-3 py-3"  src ="img/black_bg_logos/epd_logo.png"/>
              </div>
             
         </div>
             
         </div>
       </section>
-      
+    
+    <!--
+
     <section class="text-center" id="organizingcomm">
         <div class="container">
             <div class="d-xs-none d-sm-none d-md-block d-lg-block d-xl-block mb-4">
@@ -165,7 +197,8 @@
         </div>
         
       </section>
-      
+    
+    -->
 
     <!-- Footer -->
     <!--<footer class="footer bg-light">
