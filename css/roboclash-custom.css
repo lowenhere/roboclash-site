@@ -21,7 +21,7 @@ section .img-fluid {
     
 }
 
-@media (max-aspect-ratio: 4/5 ) {
+@media (max-aspect-ratio: 9/10 ) {
 .parallax::after {
   content: " ";
   position: absolute;
@@ -40,7 +40,7 @@ section .img-fluid {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
-  perspective: 1px;
+  perspective: 1.2px;
 }
 
 .parallax-section {
@@ -60,16 +60,18 @@ section .img-fluid {
 
 
 .bg1::after {
-  background-image: url('../img/roboclash_bg.png'),
+  width: 100%;
+  background-image: url('../img/roboclash_bg_left.png'),
+  url('../img/roboclash_bg_right.png'),
   url('../img/poster_bg.jpg');
-  background-position: center,center;
+  background-position: 10% 30%,90% 30%,center;
   background-repeat: no-repeat;
-  background-size: contain,cover;
+  background-size: 35%,35%,cover;
 }
 
 }
 
-@media (min-aspect-ratio: 4/5) {
+@media (min-aspect-ratio: 9/10) {
 .parallax::after {
   content: " ";
   position: absolute;
@@ -79,7 +81,7 @@ section .img-fluid {
   left: 0;
   
 
-  transform: translateZ(-1px) scale(2.6);
+  transform: translateZ(-1px) scale(2.5);
   z-index: -1;
 }
 
@@ -93,7 +95,7 @@ section .img-fluid {
 
 .parallax-section {
   position: relative;
-  height: 75vh;
+  height: 80vh;
     
   display: flex;
   align-items: center;
@@ -109,8 +111,6 @@ section .img-fluid {
 
 
 .bg1::after {
-  width: 100%;
-
   background-image: url('../img/roboclash_bg_left.png'),
   url('../img/roboclash_bg_right.png'),
   url('../img/poster_bg.jpg');
